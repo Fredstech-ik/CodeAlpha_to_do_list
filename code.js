@@ -1,4 +1,4 @@
-// Get references to the input field, add button, and task list 
+// Get references to the input field, add button, and task list
 const taskInput = document.getElementById("task-input");
 const addTaskBtn = document.getElementById("add-task-btn");
 const taskList = document.getElementById("task-list");
@@ -6,7 +6,7 @@ const taskList = document.getElementById("task-list");
 // Initialize an empty array to store tasks
 let tasks = [];
 
-//// Add click event listener to the add task button
+// Add click event listener to the add task button
 addTaskBtn.addEventListener("click", addTask);
 
 // Function to add a task to the task list
@@ -40,7 +40,7 @@ function renderTaskList() {
                 <span class="${task.completed ? "completed" : ""}">${
         task.text
       }</span>
-                <button class="delete-btn">Delete</button>
+                <button class="delete-btn">Delete<i class="ri-delete-bin-6-line"></i></button>
             </li>
         `;
     })
